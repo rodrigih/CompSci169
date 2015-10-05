@@ -1,0 +1,19 @@
+def function(x):
+	return float(5 * x**2 - 10 * x + 5)
+start = [2,-4,16,-32,1024]
+step = 5.0
+Minimum is at point:  0.9999999875660754 with value of  0.0
+	Number of Function calls:  79
+	 0.0002500000000000002  seconds wall time
+Minimum is at point:  1.000000014833725 with value of  0.0
+	Number of Function calls:  77
+	 0.00019700000000000273  seconds wall time
+Minimum is at point:  1.0000000019702688 with value of  -8.881784197001252e-16
+	Number of Function calls:  80
+	 0.0002050000000000038  seconds wall time
+Minimum is at point:  1.0000000043765307 with value of  -8.881784197001252e-16
+	Number of Function calls:  78
+	 0.0002149999999999999  seconds wall time
+Minimum is at point:  0.9999999929430788 with value of  -8.881784197001252e-16
+	Number of Function calls:  100000
+	 0.133472  seconds wall time

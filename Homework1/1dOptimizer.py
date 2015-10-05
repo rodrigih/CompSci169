@@ -6,6 +6,7 @@
 import sys
 import math
 import time
+import sys
 
 def findAbsMin():
 	'''
@@ -143,19 +144,28 @@ def readFunction(fileName, funcName="function"):
 	print(function)
 	return function
 
+def optimize(fileName):
+    exec(readFunction(fileName),globals())
 
+    max_iter = 100000
+    for x1 in start:
+        t0 = time.clock()
+        goldenSearch(x1,step,function,max_iter)
+        print("\t",time.clock() - t0," seconds wall time")
+
+def checkArgs():
+    '''
+    Description:
+        checks whether the correct number of arguments are given. If not, the
+        program immediately exits with an error mesage
+    '''
+    if not len(sys.argv) > 1:
+        sys.exit("No file specified, exiting program")
 
 def main():
-	exec(readFunction("input.txt"),globals())
-	
-	max_iter = 10000
+    checkArgs()
+    
+    for f in sys.argv[1:]:
+        optimize(f)
 
-	for x1 in start:
-		t0 = time.clock()
-		goldenSearch(x1,step,function,max_iter)
-		print("\t",time.clock() - t0," seconds wall time")
 main()
-
-
-
-

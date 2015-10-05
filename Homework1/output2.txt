@@ -1,0 +1,22 @@
+def function(x):
+	return float(x**4 + 10 * x**3 + x**2 + 20 * x + 10)
+start = [-10,-5,2,0,1,2]
+step = 2.0
+Minimum is at point:  -7.521899524796709 with value of  -1138.4923539658257
+	Number of Function calls:  74
+	 0.00028399999999999953  seconds wall time
+Minimum is at point:  -7.521899518626334 with value of  -1138.4923539658253
+	Number of Function calls:  76
+	 0.00024099999999999816  seconds wall time
+Minimum is at point:  -7.5218994798009895 with value of  -1138.4923539658255
+	Number of Function calls:  73
+	 0.00024300000000000016  seconds wall time
+Minimum is at point:  -7.521899511462001 with value of  -1138.4923539658255
+	Number of Function calls:  74
+	 0.00023200000000000304  seconds wall time
+Minimum is at point:  -7.521899518512367 with value of  -1138.4923539658253
+	Number of Function calls:  73
+	 0.00022700000000000498  seconds wall time
+Minimum is at point:  -7.5218994798009895 with value of  -1138.4923539658255
+	Number of Function calls:  73
+	 0.00022499999999999604  seconds wall time
