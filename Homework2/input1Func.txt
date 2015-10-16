@@ -1,0 +1,2 @@
+def function(var):
+	return (1 - var[0])**2 + 100 * (var[1] - var[0]**2)**2

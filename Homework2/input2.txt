@@ -1,0 +1,9 @@
+def deriv1(x):
+    return 8 * x[0] * (2*x[0]**2 + 2*x[1]**2 - 1) 
+
+def deriv2(x):
+    return 16 * x[1] * (x[0]**2 + x[1]**2)
+
+func_deriv = [deriv1,deriv2]
+start = [42,10]
+max_iter = 1000000000

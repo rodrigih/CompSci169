@@ -1,3 +1,9 @@
-def function(var):
-	return var[0] + var[1] + var[2]
-start = [1,1,1]
+def deriv1(x):
+    return 2 * (200*x[0]**3 - 200*x[0]*x[1] + x[0] - 1)
+
+def deriv2(x):
+    return 200 * (x[1] - x[0]**2)
+
+func_deriv = [deriv1,deriv2]
+start = [5,10]
+max_iter = 1000000000

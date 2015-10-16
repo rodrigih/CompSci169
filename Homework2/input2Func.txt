@@ -1,0 +1,2 @@
+def function(var):
+    return (2*var[0]**2 + 2*var[1]**2)**2
